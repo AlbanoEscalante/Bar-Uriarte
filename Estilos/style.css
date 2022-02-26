@@ -128,6 +128,19 @@ nav{
 .btninfo p span{
     color: white;
 }
+footer{
+    font-family: roboto, sans-serif;;
+    background-color: rgb(194, 191, 191);
+    height: 3rem;
+}
+
+footer p{
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-left: 20px;
+    color: white;
+    font-weight: lighter;
+}
 
 
 /*GALERIA*/
@@ -187,6 +200,8 @@ img{
     font-size: 1.5rem;
     text-align:left;
     padding: 20px;
+    background-color: beige;
+    margin-left: 10rem;
 }
 
 
@@ -203,4 +218,20 @@ img{
     font-family: roboto, sans-serif;
     color: grey;
     padding-left: 30px;
+}
+
+
+.bannervinos{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,auto);
+    padding-top: 4rem;
+}
+
+.bodega{
+    grid-row: 1/5;
+    grid-column: 3/9;
+}
+.bodega img{
+    width: 100%;
 }
