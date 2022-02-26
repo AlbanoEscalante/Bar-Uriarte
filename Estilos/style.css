@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+} 
+header{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 7rem 10rem;
+}
+
+nav{
+    grid-column: 4/10;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.menu li{
+    align-self: flex-end;
+    padding-bottom: 1rem;
+}
+
+.menu li a{
+    color: black;
+}
+
+.title{
+    grid-column: 5/9;
+    grid-row: 2/3;
+    justify-self: center;
+    padding-top: 1.2rem;
+}
+
+.title h1{
+    font-size: 3rem;
+}
+
+.title h1 span{
+    font-weight: 100;
+}
+
+.title h2{
+    font-weight: 100;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,auto);
+    padding-top: 4rem;
+}
+
+.imgbanner{
+    grid-row: 1/5;
+    grid-column: 3/9;
+}
+
+.imgbanner img{
+    width: 100%;
+}
+
+.infobanner{
+    grid-column: 9/11;
+    grid-row: 1/5;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} 
+
+.infosub{
+    font-size: 1.4rem;
+}
+.infosub h2{
+    color: black;
+    padding-left: 20%;
+    line-height: 2rem;
+}
+
+.infosub h2 span{
+    color: gray;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.listabanner{
+    position: relative;
+    left: 10%;
+    max-width: 70%;
+}
+
+.listabanner ul{
+    color: grey;
+    list-style-type: "-";
+    font-size: 1rem;
+}
+
+.btnreserva{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+
+.btninfo{
+    width: 10rem;
+    height: 2.5rem;
+    background-color: rgba(50, 62, 65, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btninfo p span{
+    color: white;
+}
+
+
+/*GALERIA*/
+
+.title h3{
+    left: 10%;
+    max-width: 70%;
+    color: grey;
+    font-size: 3rem;
+    text-align:left
+}
+img{
+    width: 100%;
+}
+
+.imgclass{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.column{
+    flex: 30%;
+    padding: 5px;
+}
+.column img{
+    margin-top: 5px;
+}
+
+/*media*/
+
+@media (max-width: 600px){
+    .column{
+        flex: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    nav{
+        grid-column: 1/13;
+    } 
+    .infobanner{
+        display: none;
+    }
+    .imgbanner{
+        grid-row: 1/5;
+        grid-column: 2/12;
+    }
+}
+
+/*****carta de vinos****/
+
+.cartadevinos {
+    font-family: roboto, sans-serif;
+    left: 10%;
+    max-width: 100%;
+    color: grey;
+    font-size: 1.5rem;
+    text-align:left;
+    padding: 20px;
+}
+
+
+.carta dl{ 
+    font-family: roboto, sans-serif;
+    color: black;
+    font-size: 1rem;
+    padding-top: 30px;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.carta dd{
+    font-family: roboto, sans-serif;
+    color: grey;
+    padding-left: 30px;
+}
