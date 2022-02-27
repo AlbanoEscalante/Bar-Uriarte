@@ -27,48 +27,51 @@
     <!-------MAIN-------->
     <main>
      <div class="background">
-         <h1 class="tarjeta_titulo">Reservas</h1>
-          <form class="tarjeta__reserva">
-            <div>
-                <label for="fnombre"> Nombre:</label>
+        <h1 class="tarjeta_titulo">Reservas</h1>
+        <form class="tarjeta__reserva">
+         
+         <div>
+              <label for="fnombre"> Nombre:</label>
               <input type="text" name="fnombre" required>
-            </div>
-            <br>
-            <div></div>
+          </div>
+         <br>
+            <div>
               <label for="femail">Email:</label>
               <input type="email" name="femail" id="femail" placeholder="albano@gmail.com" required>
-            </div>
-            <br>
-    <div>
-        <label>Comensales:</label>
+           </div>
+         <br>
+        <div>
+          <label>Comensales:</label>
               <select name="Comensales">
                 <option>2</option>
                 <option>3</option>
                 <option>4</option>
               </select>
-        <Label>Día:</Label>
-            <select name="Día">
+          <Label>Día:</Label>
+             <select name="Día">
                 <option>Jueves</option>
                 <option>Viernes</option>
                 <option>Sábado</option>
                 <option>Domingo</option>
-            </select>
-         <label>Horario</label>
-            <select name="Horario">
+              </select>
+          <label>Horario</label>
+              <select name="Horario">
                 <option>20:00</option>
                 <option>20:30</option>
                 <option>21:00</option>
-            </select>
+              </select>
         </div>
             <br>
-          <div>  
+        <div>  
             <p>Comentarios:</p>
-           <textarea></textarea>
+            <textarea rows="10%" cols="70%"></textarea>
         </div>
         <br>
-            <input type="submit">
-          </form>
+          <div class="btnenviar">
+          <input type="submit">
         </div>
+       </form>
+      </div>
     </main>
     <footer>
      <div>
