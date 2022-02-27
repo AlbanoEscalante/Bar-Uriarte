@@ -62,7 +62,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(4,auto);
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 
 .imgbanner{
@@ -127,19 +127,6 @@ nav{
 
 .btninfo p span{
     color: white;
-}
-footer{
-    font-family: roboto, sans-serif;;
-    background-color: rgb(194, 191, 191);
-    height: 3rem;
-}
-
-footer p{
-    margin-top: 10px;
-    padding-top: 15px;
-    padding-left: 20px;
-    color: white;
-    font-weight: lighter;
 }
 
 
@@ -234,4 +221,68 @@ img{
 }
 .bodega img{
     width: 100%;
+}
+
+/*****menu*****/
+
+.menus{
+    padding-top: 3rem 0;
+    
+}
+
+.infoplatos{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: grey
+}
+
+.infoplatos h2{
+    align-self: flex-start;
+    padding-left: 10%;
+    padding-top: 35px;
+}
+
+.infoplatos hr, .infoplatos p{
+    width: 90%;
+}
+
+.m1{
+background-color:beige;
+grid-area: m1;
+}
+
+.m2{
+background-color: beige;
+grid-area: m2;
+}
+
+.m3{
+background-color: beige;
+grid-area: m3;
+}
+
+.contenidomenu{
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    grid-template-areas: 
+    "m1 m2 m3";
+    justify-content: center;
+    column-gap: 5%;
+    font-family: sans-serif;
+}
+
+footer{
+    margin-top: 10px;
+    padding-top: 15px;
+    height: 40px;
+    background-color: rgb(195, 197, 176);
+    padding-left: 20px;
+}
+footer p{
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: white;
 }
